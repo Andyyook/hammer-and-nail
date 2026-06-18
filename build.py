@@ -126,7 +126,7 @@ MODULES = [
         name="compliance",
         language="Java",
         dir=ROOT / "compliance",
-        build_cmd=["javac", "-d", "build", "ComplianceAuditor.java"],
+        build_cmd=["sh", "-c", "javac -d build *.java"],
         clean_cmd=["rm", "-rf", "build"],
         build_dir=ROOT / "compliance" / "build",
     ),
