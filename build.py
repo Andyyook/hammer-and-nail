@@ -20,6 +20,17 @@ DIAGNOSTIC_CHUNK_SIZE = 40 * 1024 * 1024
 ENCRYPTLY_BLOCKER_MESSAGE = "encryptly could not create an archive. You may have timed out; try launching it in the background and waiting for it to finish with no timeout due to a bug in encryptly."
 
 
+VALID_MODULES = {"backend", "compliance", "engine", "frailbox", "frontend", "market"}
+
+def validate_modules(module_names: list) -> list:
+    """Validate module names and return invalid ones."""
+    invalid = [m for m in module_names if m not in VALID_MODULES]
+    if invalid:
+        print(f"Error: unknown module(s): {', '.join(invalid)}")
+        print(f"Valid modules: {', '.join(sorted(VALID_MODULES))}")
+        sys.exit(1)
+    return module_names
+
 def current_commit_id() -> str:
     """Return the first 4 bytes (8 hex chars) of HEAD for stable per-commit diagnostics."""
     try:
@@ -796,6 +807,7 @@ Diagnostic bundle:
     parser.add_argument(
         "-m", "--module",
         help="Module(s) to build (comma-separated, or 'all')",
+    parser.add_argument("--timing", action="store_true", help="Print structured build timing report")
         default="all",
     )
     parser.add_argument(
@@ -903,6 +915,27 @@ Diagnostic bundle:
     diagnostics_ok = generate_logd(results, args.verbose)
 
     return 0 if diagnostics_ok and all(r[1] for r in results) else 1
+
+
+    # Structured timing report
+    if args.timing:
+        import json
+        timing = {
+            "build_timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "total_modules": len(results),
+            "passed": sum(1 for r in results if r.get("status") == "PASS"),
+            "failed": sum(1 for r in results if r.get("status") == "FAIL"),
+            "module_timings": [
+                {"name": r["name"], "status": r["status"], "elapsed_seconds": r.get("elapsed", 0),
+                 "command": r.get("command", ""), "exit_code": r.get("exit_code", -1)}
+                for r in results
+            ]
+        }
+        timing_path = os.path.join(ROOT, "diagnostic", "build-timing.json")
+        os.makedirs(os.path.dirname(timing_path), exist_ok=True)
+        with open(timing_path, "w") as f:
+            json.dump(timing, f, indent=2)
+        print(f"\nTiming report written to {timing_path}")
 
 if __name__ == "__main__":
     sys.exit(main())
