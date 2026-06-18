@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 // TODO: Legacy module root. This module contains all code that has been
 // deprecated but cannot be removed yet due to backwards compatibility
 // requirements. The module is organized by migration version:

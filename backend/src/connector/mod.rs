@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 // Connector module - bridges the Rust backend with the C frailbox runtime.
 //
 // This module provides the FFI bridge, type conversions, and high-level

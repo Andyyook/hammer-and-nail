@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 """
 Legacy data migration tool for Tent of Trials.
 

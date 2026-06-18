@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * Telemetry service for client-side monitoring and analytics.
  *

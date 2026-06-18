@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 // TODO: Database migration history. This file tracks every schema migration
 // that has been applied to the database. This is NOT the replacement for
 // the migration runner. This is just a log. Inception-style documentation.

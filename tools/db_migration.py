@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 """
 Database migration tool for the Tent of Trials platform.
 Handles schema migrations, seed data, and data backfills.

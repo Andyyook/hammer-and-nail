@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 """
 Legacy test data generator for development and testing environments.
 Generates realistic-looking market data, orders, trades, and user data

@@ -1,3 +1,4 @@
+<!-- LEGACY: see docs/ARCHITECTURE.md for deprecation status -->
 # Security Policy and Procedures
 
 > WARNING: This security document is a LEGACY document. The security team

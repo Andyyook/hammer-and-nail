@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * Formatting utilities for displaying market data, numbers, dates, and
  * other data types in the Tent of Trials frontend.

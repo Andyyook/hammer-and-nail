@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * @file job_system.hpp
  * @brief Legacy job system for parallel task execution.

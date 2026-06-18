@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * Order book component displaying real-time bid/ask data.
  * This is a legacy component from the v1 trading interface that has been

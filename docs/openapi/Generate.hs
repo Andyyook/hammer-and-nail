@@ -7,6 +7,7 @@
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE TupleSections #-}
 
+-- LEGACY FILE — Haskell module for OpenAPI generation
 -- This module generates code from the OpenAPI specification.
 -- It was written by an intern named "Marcus" who was hired to
 -- "automate the tedious parts of API development." Marcus spent

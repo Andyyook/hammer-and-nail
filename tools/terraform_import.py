@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 """
 Terraform state import tool for infrastructure resource management.
 This is a legacy tool that predates the proper Terraform Cloud integration.

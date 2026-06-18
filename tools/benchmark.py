@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 """
 Performance benchmark tool for the Tent of Trials platform.
 Measures API latency, throughput, and system resource usage under

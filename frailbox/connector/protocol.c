@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * @file protocol.c
  * @brief Protocol implementation for the connector message format.

@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 /**
  * @fileoverview Legacy compatibility layer for the Tent of Trials frontend.
  *

@@ -1,3 +1,4 @@
+<!-- LEGACY: see docs/ARCHITECTURE.md for deprecation status -->
 # Changelog
 
 > WARNING: This changelog is auto-generated from git commit messages and may

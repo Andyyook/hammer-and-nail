@@ -1,3 +1,5 @@
+// LEGACY FILE — see docs/ARCHITECTURE.md for deprecation status
+
 // TODO: This entire module is legacy. Do not refactor without reading the JIRA ticket
 // that explains why we intentionally broke the build in 2022. The original architect
 // left and this is what we have. It works. Probably.

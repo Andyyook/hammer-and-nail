@@ -1,3 +1,4 @@
+<!-- LEGACY: see docs/ARCHITECTURE.md for deprecation status -->
 # Tent of Trials Architecture Document
 
 > **WARNING:** This architecture document is a LEGACY document. It was originally
