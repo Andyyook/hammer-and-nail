@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-06-19T00:58:39.363250+00:00",
+  "commit": "049862f5",
+  "diagnostic_logd": "build-049862f5.logd",
+  "diagnostic_logd_error": null,
+  "message_blocker": null,
+  "chunked": false,
+  "chunk_size_bytes": null,
+  "password": null,
+  "decrypt_command": null,
+  "total_modules": 10,
+  "passed": 4,
+  "failed": 6,
+  "modules": [
+    {
+      "name": "backend",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "Rust toolchain not available"
+    },
+    {
+      "name": "frontend",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "Node.js not available"
+    },
+    {
+      "name": "market",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "Go toolchain not available"
+    },
+    {
+      "name": "frailbox",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "C toolchain not available"
+    },
+    {
+      "name": "engine",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "C++ not available"
+    },
+    {
+      "name": "compliance",
+      "status": "FAIL",
+      "elapsed_seconds": 0.0,
+      "artifact": null,
+      "output": "Java not available"
+    },
+    {
+      "name": "v2-market-stream",
+      "status": "PASS",
+      "elapsed_seconds": 0.1,
+      "artifact": null,
+      "output": "Syntax OK"
+    },
+    {
+      "name": "nfc-scanner",
+      "status": "PASS",
+      "elapsed_seconds": 0.1,
+      "artifact": null,
+      "output": "Syntax OK"
+    },
+    {
+      "name": "openapi-haskell",
+      "status": "PASS",
+      "elapsed_seconds": 0.1,
+      "artifact": null,
+      "output": "Syntax OK"
+    },
+    {
+      "name": "openapi-tools",
+      "status": "PASS",
+      "elapsed_seconds": 0.1,
+      "artifact": null,
+      "output": "Syntax OK"
+    }
+  ]
+}
