@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-20T00:29:22.631821+00:00",
+  "commit": "28046316",
+  "diagnostic_logd": "diagnostic/build-28046316.logd",
+  "diagnostic_logd_error": null,
+  "chunked": false,
+  "chunk_size_bytes": null,
+  "password": "placeholder_password_12345",
+  "total_modules": 1,
+  "passed": 1,
+  "failed": 0,
+  "modules": [
+    {
+      "name": "check",
+      "status": "PASS",
+      "elapsed_seconds": 0.5,
+      "artifact": null,
+      "output": "OK"
+    }
+  ]
+}
