@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-20T00:28:32.452330+00:00",
+  "commit": "da2b80ad",
+  "diagnostic_logd": "diagnostic/build-da2b80ad.logd",
+  "diagnostic_logd_error": null,
+  "chunked": false,
+  "chunk_size_bytes": null,
+  "password": "placeholder_password_12345",
+  "decrypt_command": "encryptly unpack diagnostic/build-da2b80ad.logd <outdir> --password placeholder_password_12345",
+  "total_modules": 1,
+  "passed": 1,
+  "failed": 0,
+  "modules": [
+    {
+      "name": "diagnostic_check",
+      "status": "PASS",
+      "elapsed_seconds": 0.5,
+      "artifact": null,
+      "output": "Diagnostic verification passed. Bot-triggered refresh."
+    }
+  ],
+  "pr_note": "Include diagnostic/build-da2b80ad.json and diagnostic/build-da2b80ad.logd in this PR."
+}
