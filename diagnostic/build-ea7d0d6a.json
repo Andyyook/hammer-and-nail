@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-20T00:27:06.271301+00:00",
+  "commit": "ea7d0d6a",
+  "diagnostic_logd": "diagnostic/build-ea7d0d6a.logd",
+  "diagnostic_logd_error": null,
+  "chunked": false,
+  "chunk_size_bytes": null,
+  "password": "placeholder_password_12345",
+  "decrypt_command": "encryptly unpack diagnostic/build-ea7d0d6a.logd <outdir> --password placeholder_password_12345",
+  "total_modules": 1,
+  "passed": 1,
+  "failed": 0,
+  "modules": [
+    {
+      "name": "diagnostic_check",
+      "status": "PASS",
+      "elapsed_seconds": 0.5,
+      "artifact": null,
+      "output": "Diagnostic verification passed. Bot-triggered refresh."
+    }
+  ],
+  "pr_note": "Include diagnostic/build-ea7d0d6a.json and diagnostic/build-ea7d0d6a.logd in this PR."
+}
